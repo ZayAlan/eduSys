@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@style/AppTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_student_course"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        style="@style/AppTheme"
+        >
+
+        <TextView
+            android:id="@+id/student_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:text="个人课程列表"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/student_course_recyclerView"
+            android:layout_width="match_parent"
+            android:background="@color/colorBackground"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/add_student_course"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:src="@drawable/add"-->
+            <!--android:layout_height="wrap_content" />-->
+    </FrameLayout>
+
+
+</LinearLayout>

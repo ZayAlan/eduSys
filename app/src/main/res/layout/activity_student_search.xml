@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/search_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/search_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/AppTheme"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                android:layout_width="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/math_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchnoclick"
+                        android:text="数学"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        android:layout_height="38dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:id="@+id/chinese_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="语文"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        android:background="@drawable/searchnoclick"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:id="@+id/english_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="英语"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/searchnoclick"/>
+
+                    <Button
+                        android:id="@+id/science_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="自然科学"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorSignUp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/searchnoclick"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/art_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchnoclick"
+                        android:text="艺术"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        android:layout_height="38dp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:id="@+id/pe_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="体育"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        android:background="@drawable/searchnoclick"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:id="@+id/computer_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="计算机"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorSignUp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/searchnoclick"/>
+
+                    <Button
+                        android:id="@+id/other_search"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="38dp"
+                        android:text="其他"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorSignUp"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:background="@drawable/searchnoclick"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_student_search"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                style="@style/AppTheme"
+                android:layout_height="?attr/actionBarSize">
+                <TextView
+                    android:id="@+id/course_add_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:text="Search"/>
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/student_search_recyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/colorBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</android.support.design.widget.CoordinatorLayout>

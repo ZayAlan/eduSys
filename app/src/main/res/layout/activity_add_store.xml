@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@style/AppTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_store"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        style="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/store_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:text="添加店面"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--设置用户名-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        android:text="店名"/>
+    <EditText
+        android:id="@+id/add_store_sname"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorSignUp"
+        android:gravity="center"
+        android:textColorLink="@color/colorSignUp"
+        android:textColorHighlight="@color/colorSignUp"
+        android:background="@drawable/signupshape"/>
+
+    <!--设置密码-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:text="地址"/>
+    <EditText
+        android:id="@+id/add_store_address"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorSignUp"
+        android:gravity="center"
+        android:textColorLink="@color/colorSignUp"
+        android:textColorHighlight="@color/colorSignUp"
+        android:background="@drawable/signupshape"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/add_store_sure"
+        android:background="@drawable/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorHint"
+        android:text="添加" />
+
+</LinearLayout>

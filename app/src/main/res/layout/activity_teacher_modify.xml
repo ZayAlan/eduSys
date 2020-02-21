@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_teacher_modify_info"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        style="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/teacher_modify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:text="教师信息"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selfinfoshape"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--用户名-->
+                    <ImageView
+                        android:src="@drawable/showusername"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:id="@+id/modify_teacher_info_username"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--账户类型-->
+                    <ImageView
+                        android:src="@drawable/showcounttype"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:id="@+id/modify_teacher_info_type"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selfinfoshape"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--姓名-->
+                    <ImageView
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:src="@drawable/showteachername"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_name"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--性别-->
+                    <ImageView
+                        android:src="@drawable/showsex"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_sex"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--年龄-->
+                    <ImageView
+                        android:src="@drawable/showage"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_age"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--教育领域-->
+                    <ImageView
+                        android:src="@drawable/showdomain"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_domain"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--从教年限-->
+                    <ImageView
+                        android:src="@drawable/showworkyear"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_work"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--身份证号-->
+                    <ImageView
+                        android:src="@drawable/showid"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:id="@+id/modify_teacher_info_id"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selfinfoshape"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--教育适合年龄-->
+                    <ImageView
+                        android:src="@drawable/showsuitage"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:id="@+id/modify_teacher_info_suitage"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorShowInfo" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--联系方式-->
+                    <ImageView
+                        android:src="@drawable/showcontact"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_contact"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selfinfoshape"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--简介-->
+                    <ImageView
+                        android:src="@drawable/showresume"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+                        android:paddingBottom="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:id="@+id/modify_teacher_info_resume"
+                        android:textColor="@color/colorShowInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/teacher_modify_sure"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorHint"
+                android:text="修改" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:theme="@style/AppTheme">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_comment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        style="@style/AppTheme"
+        >
+
+        <TextView
+            android:id="@+id/add_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:text="发表评论"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/one_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selfinfoshape"
+                    android:text="1分"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSignUp"
+                    android:layout_height="40dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/two_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="2分"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSignUp"
+                    android:background="@drawable/selfinfoshape"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/three_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="3分"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSignUp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/selfinfoshape"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/four_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="4分"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSignUp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/selfinfoshape"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/five_point"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:text="5分"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSignUp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/selfinfoshape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selfinfoshape"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textSize="18dp"
+                        android:id="@+id/add_comment_content"
+                        android:textColor="@color/colorShowInfo"
+                        android:gravity="start"
+                        android:hint="请输入内容..."
+                        android:background="@null"
+                        android:textColorHint="@color/colorShowInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/add_comment_button"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorHint"
+                android:text="发布" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
